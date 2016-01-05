@@ -1,0 +1,88 @@
+<section class="classrooms-show-container">
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Classroom</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <% if notice %>
+      <div class="alert alert-success" role="alert">
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        <span class="sr-only">Success:</span>
+        <%= notice %>
+      </div>
+    <% end %>
+
+    <h4>Classroom</h4>
+    <table class="table table-responsive">
+      <thead>
+        <tr>
+
+
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="col-md-3 col-sm-3 col-xs-4"><b>#</b></td>
+          <td><%= @classroom.id %></td>
+        </tr>
+        <tr>
+          <td><b>Entry At</b></td>
+          <td><%= @classroom.entry_at %></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4>Student</h4>
+    <table class="table table-responsive">
+      <tbody>
+        <tr>
+          <td class="col-md-3 col-sm-3 col-xs-4"><b>#</b></td>
+          <td><%= @classroom.student.id %></td>
+        </tr>
+        <tr>
+          <td><b>Name</b></td>
+          <td><%= @classroom.student.name %></td>
+        </tr>
+        <tr>
+          <td><b>Register Number</b></td>
+          <td><%= @classroom.student.register_number %></td>
+        </tr>
+        <tr>
+          <td><b>Status</b></td>
+          <td><%= @classroom.student.status %></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4>Course</h4>
+    <table class="table table-responsive">
+      <tbody>
+        <tr>
+          <td class="col-md-3 col-sm-3 col-xs-4"><b>#</b></td>
+          <td><%= @classroom.course.id %></td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td><%= @classroom.course.name %></td>
+        </tr>
+        <tr>
+          <td>Description</td>
+          <td><%= @classroom.course.description %></td>
+        </tr>
+        <tr>
+          <td>Status</td>
+          <td><%= @classroom.course.status %></td>
+        </tr>
+        <tr>
+        </tr>
+      </tbody>
+    </table>
+
+    <%= link_to 'Back', classrooms_path, class: ['btn', 'btn-default', 'pull-left'] %>
+    <%= link_to 'Home', root_path(), class: ['btn', 'btn-primary', 'pull-right'] %>
+    <%= link_to 'Edit', edit_classroom_path(@classroom), class: ['btn', 'btn-default', 'pull-right'] %>
+  </div>
+</section>

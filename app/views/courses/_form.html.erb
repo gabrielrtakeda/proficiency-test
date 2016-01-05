@@ -1,0 +1,39 @@
+<%= simple_form_for @course, :html => {:role => 'form', :"data-toggle" => 'validator'} do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-group">
+    <%= label_tag(:name, "Name") %>
+    <%= f.text_field :name,
+      class: ['form-control'],
+      id: 'name',
+      :required => 'required',
+      pattern: "^[a-zA-Z\u00C0-\u00FF\s]+$",
+      maxlength: '45',
+      autofocus: 'autofocus'
+    %>
+    <span class="help-block with-errors"></span>
+  </div>
+  <div class="form-group">
+    <%= label_tag(:description, "Description") %>
+    <%= f.text_field :description,
+      class: ['form-control'],
+      id: 'description',
+      pattern: "^[a-zA-Z\u00C0-\u00FF\s]+$",
+      :required => 'required',
+      maxlength: '45'
+    %>
+    <span class="help-block with-errors"></span>
+  </div>
+  <div class="form-group">
+    <%= label_tag(:status, "Status") %>
+    <%= f.number_field :status,
+      class: ['form-control'],
+      id: 'status',
+      pattern: "^[0-9]+$",
+      :required => 'required',
+      min: '0'
+    %>
+    <span class="help-block with-errors"></span>
+  </div>
+  <%= f.button :submit, class: ['btn-primary', 'pull-right'] %>
+<% end %>

@@ -1,0 +1,45 @@
+<section class="courses-show-container">
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Course</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <% if notice %>
+      <div class="alert alert-success" role="alert">
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        <span class="sr-only">Success:</span>
+        <%= notice %>
+      </div>
+    <% end %>
+
+    <table class="table table-responsive">
+      <tbody>
+        <tr>
+          <td><b>#</b></td>
+          <td><%= @course.id %></td>
+        </tr>
+
+        <tr>
+          <td><b>Name</b></td>
+          <td><%= @course.name %></td>
+        </tr>
+
+        <tr>
+          <td><b>Regiter Number</b></td>
+          <td><%= @course.description %></td>
+        </tr>
+
+        <tr>
+          <td><b>Status</b></td>
+          <td><%= @course.status %></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <%= link_to 'Back', courses_path, class: ['btn', 'btn-default', 'pull-left'] %>
+    <%= link_to 'Home', root_path(), class: ['btn', 'btn-primary', 'pull-right'] %>
+    <%= link_to 'Edit', edit_course_path(@course), class: ['btn', 'btn-default', 'pull-right'] %>
+  </div>
+</section>
