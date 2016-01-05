@@ -23,5 +23,6 @@ module ProficiencyTest
     Rails.root.join('dist')
     config.assets.enabled = true
     config.assets.paths << "#{Rails.root}/dist"
+    config.assets.initialize_on_precompile = false
   end
 end
