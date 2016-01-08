@@ -2,8 +2,8 @@
 
 var path = require('path');
 var paths = {
-  app: path.join(__dirname, 'app', 'assets'),
-  dist: path.join(__dirname + '/dist'),
+  app: path.join(__dirname, 'app', 'assets', 'src'),
+  dist: path.join(__dirname, 'app', 'assets', 'dist'),
   node_modules: path.join(__dirname + '/node_modules')
 };
 
@@ -13,9 +13,9 @@ module.exports = {
   entry: path.join(paths.app + '/entry.js'),
   output: {
     path: paths.dist,
-    filename: 'build.js',
+    filename: 'webpack.bundle.js',
     publicPath: '/',
-    sourceMapFilename: "build.map"
+    sourceMapFilename: "webpack.bundle.map"
   },
   resolve: {
     alias: {
@@ -37,7 +37,7 @@ module.exports = {
         exclude: /node_modules|bower_components/
       }, {
         test: /\.(woff|woff2|ttf|eot|svg)(\?]?.*)?$/,
-        loader: 'file-loader?name=assets/res/[name].[ext]?[hash]'
+        loader: 'file-loader?name=res/[name].[ext]?[hash]'
       }, {
         test: /\.html$/,
         loader: 'raw'
