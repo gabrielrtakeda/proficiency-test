@@ -1,0 +1,42 @@
+@import '../styl/variables/colors.styl'
+
+.index-container
+  font-size 6rem
+  text-align center
+  vertical-align middle
+
+  & > a
+    height 100vh
+    line-height 100vh
+    color #fff
+    vertical-align middle
+
+    &:hover
+      opacity .95
+      cursor pointer
+      text-decoration none
+
+      & > span
+        border-bottom 1px dashed #bbb
+
+  .students
+    background students-color
+
+  .courses
+    background courses-color
+
+  .classrooms
+    background classrooms-color
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px)
+  .index-container
+    & > a
+      height 80vh
+      line-height 80vh
+
+    .classrooms
+      height 20vh
+      line-height 20vh
