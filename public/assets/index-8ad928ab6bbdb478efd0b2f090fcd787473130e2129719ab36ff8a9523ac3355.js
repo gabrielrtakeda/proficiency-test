@@ -1,0 +1,1 @@
+module.exports=angular.module("app",[require("angular-animate"),require("angular-ui-bootstrap"),"ui.bootstrap.datetimepicker",require("./application/index").name,require("./students/index").name,require("./courses/index").name,require("./classrooms/index").name]).config(["$locationProvider","$sceDelegateProvider",function(e,t){e.html5Mode(!0)}]);

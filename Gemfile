@@ -8,6 +8,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'therubyracer', platforms: :ruby
 
+group :assets do
+  gem 'uglifier'
+end
+
 gem 'simple_form', '~> 3.0.2'
 gem 'haml', '~> 4.0.4'
 
