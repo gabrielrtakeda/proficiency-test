@@ -3,7 +3,7 @@
 var path = require('path');
 var paths = {
   app: path.join(__dirname, 'app', 'assets', 'src'),
-  dist: path.join(__dirname, 'app', 'assets', 'dist'),
+  dist: path.join(__dirname, 'app', 'assets', 'javascripts'),
   node_modules: path.join(__dirname + '/node_modules')
 };
 
