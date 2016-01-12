@@ -37,7 +37,7 @@ module.exports = {
         exclude: /node_modules|bower_components/
       }, {
         test: /\.(woff|woff2|ttf|eot|svg)(\?]?.*)?$/,
-        loader: 'file-loader?name=res/[name].[ext]?[hash]'
+        loader: 'file-loader?name=assets/res/[name].[ext]?[hash]'
       }, {
         test: /\.html$/,
         loader: 'raw'

@@ -9472,31 +9472,31 @@
 /* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "res/glyphicons-halflings-regular.eot?12a426958c2fd0d78683b99233309f8a";
+	module.exports = __webpack_require__.p + "assets/res/glyphicons-halflings-regular.eot?12a426958c2fd0d78683b99233309f8a";
 
 /***/ },
 /* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "res/glyphicons-halflings-regular.woff2?448c34a56d699c29117adc64c43affeb";
+	module.exports = __webpack_require__.p + "assets/res/glyphicons-halflings-regular.woff2?448c34a56d699c29117adc64c43affeb";
 
 /***/ },
 /* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "res/glyphicons-halflings-regular.woff?4c8bc1afc2a24829681619de967f8a43";
+	module.exports = __webpack_require__.p + "assets/res/glyphicons-halflings-regular.woff?4c8bc1afc2a24829681619de967f8a43";
 
 /***/ },
 /* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "res/glyphicons-halflings-regular.ttf?a8680ee4a60bc03270cb85165fbd2878";
+	module.exports = __webpack_require__.p + "assets/res/glyphicons-halflings-regular.ttf?a8680ee4a60bc03270cb85165fbd2878";
 
 /***/ },
 /* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "res/glyphicons-halflings-regular.svg?d229c8348bb5ce1b8fe9d94741d4a2ff";
+	module.exports = __webpack_require__.p + "assets/res/glyphicons-halflings-regular.svg?d229c8348bb5ce1b8fe9d94741d4a2ff";
 
 /***/ },
 /* 81 */
