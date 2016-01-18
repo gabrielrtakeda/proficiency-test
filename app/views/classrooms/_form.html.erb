@@ -6,7 +6,7 @@
     <%= f.select(:student_id,
       options_from_collection_for_select(@students, 'id', 'name', :selected => @classroom.student_id),
       { :include_blank => true },
-      { :class => 'form-control' },
+      { :class => 'form-control', :required => 'required' },
     ) %>
     <span class="help-block with-errors"></span>
   </div>
@@ -16,7 +16,7 @@
     <%= f.select(:course_id,
       options_from_collection_for_select(@courses, 'id', 'name', :selected => @classroom.course_id),
       { :include_blank => true },
-      { :class => 'form-control' }
+      { :class => 'form-control', :required => 'required' }
     ) %>
     <span class="help-block with-errors"></span>
   </div>
